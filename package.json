@@ -1,0 +1,23 @@
+{
+  "name": "tool",
+  "version": "1.0.0",
+  "description": "tool",
+  "main": "index.js",
+  "dependencies": {
+    "xlsx": "^0.10.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/southnan0/tool.git"
+  },
+  "author": "southnan0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/southnan0/tool/issues"
+  },
+  "homepage": "https://github.com/southnan0/tool#readme"
+}
