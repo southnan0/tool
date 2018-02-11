@@ -46,8 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-/node_modules/**/*
+**/node_modules/**/*
 /.idea/**/*
 *.swp
 *.un~
 *.*~
+package-lock.json

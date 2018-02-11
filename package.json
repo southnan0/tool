@@ -4,6 +4,7 @@
   "description": "tool",
   "main": "index.js",
   "dependencies": {
+    "commander": "^2.14.1",
     "xlsx": "^0.10.6"
   },
   "devDependencies": {},
