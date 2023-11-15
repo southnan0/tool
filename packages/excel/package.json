@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "json": "node ./json2excel.js",
+        "excel":"node ./excel2json.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "excel": "^1.0.1",
+        "inquirer": "^9.2.12",
+        "json2xls": "^0.1.2"
+    }
+}
