@@ -22,15 +22,28 @@ const run = ()=>{
     message: '请输入value value，默认：value',
     name: 'valueName'
   }]).then(({inputFilePath, outputFilePath,keyName='key',valueName='value'})=>{
+    keyName = keyName || 'key'
+    valueName = valueName || 'value'
     const jsonData = readJsonFile(inputFilePath)
     const arr = []
-    Object.keys(jsonData).forEach(key => {
-      arr.push({
-        [keyName]: key,
-        [valueName]: jsonData[key]
+    if(Array.isArray(jsonData)){
+      jsonData.forEach(item => {
+        arr.push({
+          [keyName]: item[keyName],
+          [valueName]: item[valueName]
+        })
       })
-    })
+    }else{
+      Object.keys(jsonData).forEach(key =>{
+        arr.push({
+          [keyName]: key,
+          [valueName]: jsonData[key]
+        })
+      })
+    }
     
+    
+    console.info(arr)
     let xls = json2xls(arr)
     
     fs.writeFileSync(outputFilePath || path.resolve(path.dirname(inputFilePath), './result.xlsx'), xls, 'binary')

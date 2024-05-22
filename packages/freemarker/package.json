@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "freemarker.js": "^1.4.0"
+  }
+}
